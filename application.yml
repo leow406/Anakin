@@ -1,0 +1,52 @@
+# ─── Server & WebSocket Configuration ────────────────────────────────────────
+server:
+  port: 2333
+  address: 0.0.0.0
+
+# ─── Spring Boot Settings ────────────────────────────────────────────────────
+spring:
+  main:
+    banner-mode: log
+
+# ─── Lavalink Core Configuration ─────────────────────────────────────────────
+lavalink:
+  server:
+    password: "youshallnotpass"    # ↦ need to match LAVA_PASSWORD in the bot code
+    sources:
+      youtube: false               
+      youtube-source: true         # enable the ytb plugin
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+
+  bufferDurationMs: 2000
+  youtubePlaylistLoadLimit: 6
+
+  player:
+    stuckThresholdMS: 2000
+
+# ─── youtube-source Plugin Configuration ────────────────────────────────────
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+
+    # ── OAuth2 Device Flow ────────────────────────────────────────────────────
+    oauth:
+      enabled: true
+      # Ton refreshToken récupéré lors du device flow (collé ici)
+      refreshToken: "YOUTUBE TOKEN"
+      skipInitialization: true
+
+    # ── poToken Guest ────────────────────────────────────────────
+    # If you wish to use OAuth uncoment the following 
+    # oauth:
+    #   enabled: false
+    # pot:
+    #   token: ""
+    #   visitorData: ""
