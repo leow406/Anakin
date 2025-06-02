@@ -93,7 +93,7 @@ Add all tracks from a YouTube or Spotify playlist to the queue.
 ###### Syntax : 
 `!playlist <URL>`
 
-######Arguments : 
+###### Arguments : 
 `URL` : will list every songs present in the playlist and add them to the queue
 
 ###### Example : 
