@@ -214,8 +214,21 @@ PLAYER_CHANNEL_ID = 123456789123456789
 ------------
 
 
+You will need the following requirements for the bot to run properly : 
 
+```python
+discord.py
+wavelink
+spotipy
+```
 
+You can either install them manually or install everything in `requirements.txt` using the following command : 
+```python
+pip install -r requirements.txt
+
+```
+
+------------
 
 
 
