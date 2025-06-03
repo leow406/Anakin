@@ -230,8 +230,6 @@ pip install -r requirements.txt
 
 ------------
 
-
-
-
-
-
+### To do : 
+- Allow users to create custom playlist (per user)
+- Accept URL for the !play command instead of just the title
