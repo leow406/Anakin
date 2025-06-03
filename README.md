@@ -7,7 +7,7 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 ## Overview
 
-** Features : **
+**Features : **
 *Please note that all commands here have the "!" prefix but this can be changed in __config.py__*
 
 ------------
@@ -19,13 +19,12 @@ If a track is already playing, add it to the queue
 
 >##### Syntax : 
 > `!play <title> -loop [int]`
-
-
+>
 >#####Arguments : 
 > `title` : will search this title on youtube in order to play it
 `-loop [int]` : play the track a total of `[int]` times (initial + `[int]` loops)
 `-loop` : play the track endlessly
-
+>
 >##### Examples : 
 
 > `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
