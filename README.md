@@ -14,21 +14,21 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 ### Basic commands usage
 #### !play
-Search and play a YouTube track (This does not fully support link yet)
+> Search and play a YouTube track (This does not fully support link yet)
 If a track is already playing, add it to the queue
 
-##### Syntax : 
-`!play <title> -loop [int]`
+>##### Syntax : 
+> `!play <title> -loop [int]`
 
 
-#####Arguments : 
-`title` : will search this title on youtube in order to play it
+>#####Arguments : 
+> `title` : will search this title on youtube in order to play it
 `-loop [int]` : play the track a total of `[int]` times (initial + `[int]` loops)
 `-loop` : play the track endlessly
 
-##### Examples : 
+>##### Examples : 
 
-`!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
+> `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
 `!play home resonance` will play Resonance - home once or add it to the queue
 `!play Around the world -loop 3` will play Around the world - Daft Punk 3 times
 
@@ -36,103 +36,107 @@ If a track is already playing, add it to the queue
 ------------
 
 #### !add
-Search for a track and add it to the queue. If nothing is playing, play immediately.
+>Search for a track and add it to the queue. If nothing is playing, play immediately.
 
-##### Syntax : 
+>##### Syntax : 
 
-`!add <title>`
+>`!add <title>`
 
-#####Arguments : 
-`title` : will search this title on youtube abd add it to the queue
+>#####Arguments : 
+>`title` : will search this title on youtube abd add it to the queue
 
-##### Example : 
-`!add Rasputin` : will add Rasputin to the queue
+>##### Example : 
+>`!add Rasputin` : will add Rasputin to the queue
 
 ------------
 
 #### !queue
-Display queue status: history (played), now playing and upcoming tracks.
+>Display queue status: history (played), now playing and upcoming tracks.
 
-##### Syntax : 
-`!queue`
+>##### Syntax : 
+>`!queue`
 
 
 ------------
 
-#### !remove 
-Remove a track from the queue by matching title
+>#### !remove 
+>Remove a track from the queue by matching title
 
-##### Syntax : 
-`!remove <title>`
+>##### Syntax : 
+>`!remove <title>`
 
-#####Arguments : 
-`title` : will remove this track from the list of upcoming songs
+>#####Arguments : 
+>`title` : will remove this track from the list of upcoming songs
 
-##### Example : 
-`!remove Every breath you take` will remove Every Breath you take from the list of upcoming songs
+>##### Example : 
+>`!remove Every breath you take` will remove Every Breath you take from the list of upcoming songs
 
 ------------
 
 #### !shuffle
-Shuffle the queue. If a playlist is loading, shuffle after loading finishes.
+>Shuffle the queue. If a playlist is loading, shuffle after loading finishes.
 
-##### Syntax : 
-`!shuffle`
+>##### Syntax : 
+>`!shuffle`
 
 ------------
 
 #### !empty
-Clear the entire queue (does not affect history or the current track).
+>Clear the entire queue (does not affect history or the current track).
 ##### Syntax : 
-`!empty`
+>`!empty`
 
 
 ------------
 
 #### !playlist
-Add all tracks from a YouTube or Spotify playlist to the queue.
-##### Syntax : 
-`!playlist <URL>`
+>Add all tracks from a YouTube or Spotify playlist to the queue.
+>##### Syntax : 
+>`!playlist <URL>`
 
-##### Arguments : 
-`URL` : will list every songs present in the playlist and add them to the queue
+>##### Arguments : 
+>`URL` : will list every songs present in the playlist and add them to the queue
 
-##### Example : 
-`!playlist https://open.spotify.com/playlist/06tCWiOWTnuTfoKwHB8Byl?si=0f2e3c97a6bb472f` will add every track present in this spotify playlist to the queue
+>##### Example : 
+>`!playlist https://open.spotify.com/playlist/06tCWiOWTnuTfoKwHB8Byl?si=0f2e3c97a6bb472f` will add every track present in this spotify playlist to the queue
 
 ------------
 
 
 ### Controls 
 
-#### !pause 
-Pause the current track until resumed
+>#### !pause 
+>Pause the current track until resumed
 
 ------------
 #### !resume 
-Resume playback if paused (same as !music).
+>Resume playback if paused (same as !music).
 
 ------------
 #### !next
-Skip to the next track in the queue (clears any loop).
+>Skip to the next track in the queue (clears any loop).
 
 ------------
 #### previous
-Play the previous track from history (up to 3 saved), clears loop.
+>Play the previous track from history (up to 3 saved), clears loop.
 
 ------------
 ### Bot control
 
 #### !stop
-Stop playback and disconnect. Queue remains in memory (loop cleared).
+>Stop playback and disconnect. Queue remains in memory (loop cleared).
 
 #### !music/resume
-If the bot was stopped with `!stop`, reconnect and resume the queue; if music is paused, unpause.
+>If the bot was stopped with `!stop`, reconnect and resume the queue; if music is paused, unpause.
 
 ---
 
+# Instalation 
 
+You will need a Lavalink server to allow the bot to fetch result from Youtube. You can download the main .jar file here : 
+**https://github.com/lavalink-devs/Lavalink/releases/tag/4.0.8**
 
+Once downloaded place the file in the same directory as `application.yml`. You can edit this file to change the port or add plugins but make sure the password mach the one in the `main.py` file
 
 
 
