@@ -196,13 +196,13 @@ I highly recommend running the bot with at least 1Gb of ram but 2Gb is will run 
 The `config.py` file is already well explained but to sum up this is where you can add your bot token and the spotify configuration :
 
 ```python
-TOKEN       = "YOUR BOT TOKEN"
+TOKEN = "YOUR BOT TOKEN"
 ```
 
 To setup the spotify credentials, you will need to create and app on the [Spotify developper page](https://developer.spotify.com/dashboard "Spotify developper page") and enter the given creds here : 
 
 ```python
-SPOTIPY_CLIENT_ID     = "CLIENT ID"
+SPOTIPY_CLIENT_ID = "CLIENT ID"
 SPOTIPY_CLIENT_SECRET = "CLIENT SECRET"
 ```
 You will also need to specify in which channel the player will be sent : 
