@@ -15,8 +15,8 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 ### Basic commands usage
 #### !play
 > Search and play a YouTube track (This does not fully support link yet)
-If a track is already playing, add it to the queue
-
+>If a track is already playing, add it to the queue
+>
 >##### Syntax : 
 > `!play <title> -loop [int]`
 >
