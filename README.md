@@ -7,7 +7,7 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 ## Overview
 
-**Features : **
+### Features
 *Please note that all commands here have the "!" prefix but this can be changed in __config.py__*
 
 ------------
@@ -82,7 +82,7 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 #### !empty
 >Clear the entire queue (does not affect history or the current track).
-##### Syntax : 
+>##### Syntax : 
 >`!empty`
 
 
@@ -116,7 +116,7 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 >Skip to the next track in the queue (clears any loop).
 
 ------------
-#### previous
+#### !previous
 >Play the previous track from history (up to 3 saved), clears loop.
 
 ------------
