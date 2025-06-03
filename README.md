@@ -1,6 +1,6 @@
 # Anakin
 
-A full-featured Discord bot for playing music directly from YouTube and Spotify playlists, with queue management, looping, simple commands a an interactive player.
+A full-featured Discord bot for playing music directly from YouTube and Spotify playlists, with queue management, looping, simple commands and an interactive player.
 
 ------------
 
@@ -11,37 +11,37 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 ------------
 
-### Basic commands usage
+### Basic command usage
 #### !play
-> Search and play a YouTube track (This does not fully support link yet)
+> Search and play a YouTube track (This does not fully support link inputs yet)
 >If a track is already playing, add it to the queue
 >
 >##### Syntax : 
 > `!play <title> -loop [int]`
 >
->#####Arguments : 
+>##### Arguments : 
 > `title` : will search this title on youtube in order to play it
 `-loop [int]` : play the track a total of `[int]` times (initial + `[int]` loops)
 `-loop` : play the track endlessly
 >
 >##### Examples : 
 >
-> `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
-`!play home resonance` will play Resonance - home once or add it to the queue
-`!play Around the world -loop 3` will play Around the world - Daft Punk 3 times
+> `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infinitely
+`!play home resonance` will play Resonance - HOME once or add it to the queue
+`!play Around the World -loop 3` will play Around the World - Daft Punk 3 times
 
 
 ------------
 
 #### !add
->Search for a track and add it to the queue. If nothing is playing, play immediately.
+>Search for a track and add it to the queue. If nothing is playing, it plays immediately.
 >
 >##### Syntax : 
 >
 >`!add <title>`
 >
->#####Arguments : 
->`title` : will search this title on youtube abd add it to the queue
+>##### Arguments : 
+>`title` : will search this title on youtube and add it to the queue
 >
 >##### Example : 
 >`!add Rasputin` : will add Rasputin to the queue
@@ -152,17 +152,17 @@ server:
   address: 0.0.0.0 " to listen on all interfaces"
 ```
 
-Here you can change the default password and enable/disable the youtube plugin : 
+Here you can change the default password and enable/disable the YouTube plugin : 
 ```yaml
 lavalink:
   server:
     password: "youshallnotpass"    "need to match LAVA_PASSWORD in the bot code"
     sources:
       youtube: false "disable the default youtube integration"
-      youtube-source: true "enable the ytb plugin"
+      youtube-source: true "enable the youtube plugin"
 ```
 
-Here you can configure the Youtube plugin that allow the bot to fetch results : 
+Here you can configure the Youtube plugin that allows the bot to fetch results : 
 ```yaml
 plugins:
   youtube:
@@ -172,7 +172,7 @@ plugins:
     allowDirectPlaylistIds: true
 ```
 
-You also need to enter your OAuth token for the bot to be able de search on youtube. It will be prompted when booting up Lavalink for the first time. You will need to access the said website and enter the code for it to link, justl like with a TV
+You also need to enter your OAuth token for the bot to be able to search on youtube. It will be prompted when booting up Lavalink for the first time. You will need to access the said website and enter the code for it to link, juste like with a connected TV
 
 ```yaml
 
@@ -186,7 +186,7 @@ When the configuration is ready, you can start Lavalink with a command like this
 
 `java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -jar Lavalink.jar`
 
-I highly recommend running the bot with at least 1Gb of ram but 2Gb is will run smoother
+I highly recommend running the bot with at least 1GB of ram but 2GB is will run smoother
 
 
 ------------
@@ -199,13 +199,13 @@ The `config.py` file is already well explained but to sum up this is where you c
 TOKEN = "YOUR BOT TOKEN"
 ```
 
-To setup the spotify credentials, you will need to create and app on the [Spotify developper page](https://developer.spotify.com/dashboard "Spotify developper page") and enter the given creds here : 
+To setup the spotify credentials, you will need to create an app on the [Spotify developer page](https://developer.spotify.com/dashboard "Spotify developper page") and enter the given creds here : 
 
 ```python
 SPOTIPY_CLIENT_ID = "CLIENT ID"
 SPOTIPY_CLIENT_SECRET = "CLIENT SECRET"
 ```
-You will also need to specify in which channel the player will be sent : 
+You will also need to specify in which channel the player will be sent: 
 ```python
 PLAYER_CHANNEL_ID = 123456789123456789
 
