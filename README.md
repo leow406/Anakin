@@ -7,7 +7,6 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 
 ## Overview
 
-### Features
 *Please note that all commands here have the "!" prefix but this can be changed in __config.py__*
 
 ------------
