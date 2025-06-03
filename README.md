@@ -26,7 +26,7 @@ If a track is already playing, add it to the queue
 `-loop` : play the track endlessly
 >
 >##### Examples : 
-
+>
 > `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
 `!play home resonance` will play Resonance - home once or add it to the queue
 `!play Around the world -loop 3` will play Around the world - Daft Punk 3 times
@@ -36,14 +36,14 @@ If a track is already playing, add it to the queue
 
 #### !add
 >Search for a track and add it to the queue. If nothing is playing, play immediately.
-
+>
 >##### Syntax : 
-
+>
 >`!add <title>`
-
+>
 >#####Arguments : 
 >`title` : will search this title on youtube abd add it to the queue
-
+>
 >##### Example : 
 >`!add Rasputin` : will add Rasputin to the queue
 
@@ -51,22 +51,22 @@ If a track is already playing, add it to the queue
 
 #### !queue
 >Display queue status: history (played), now playing and upcoming tracks.
-
+>
 >##### Syntax : 
 >`!queue`
-
+>
 
 ------------
 
 >#### !remove 
 >Remove a track from the queue by matching title
-
+>
 >##### Syntax : 
 >`!remove <title>`
-
+>
 >#####Arguments : 
 >`title` : will remove this track from the list of upcoming songs
-
+>
 >##### Example : 
 >`!remove Every breath you take` will remove Every Breath you take from the list of upcoming songs
 
@@ -74,7 +74,7 @@ If a track is already playing, add it to the queue
 
 #### !shuffle
 >Shuffle the queue. If a playlist is loading, shuffle after loading finishes.
-
+>
 >##### Syntax : 
 >`!shuffle`
 
@@ -92,10 +92,10 @@ If a track is already playing, add it to the queue
 >Add all tracks from a YouTube or Spotify playlist to the queue.
 >##### Syntax : 
 >`!playlist <URL>`
-
+>
 >##### Arguments : 
 >`URL` : will list every songs present in the playlist and add them to the queue
-
+>
 >##### Example : 
 >`!playlist https://open.spotify.com/playlist/06tCWiOWTnuTfoKwHB8Byl?si=0f2e3c97a6bb472f` will add every track present in this spotify playlist to the queue
 
@@ -106,11 +106,11 @@ If a track is already playing, add it to the queue
 
 >#### !pause 
 >Pause the current track until resumed
-
+>
 ------------
 #### !resume 
 >Resume playback if paused (same as !music).
-
+>
 ------------
 #### !next
 >Skip to the next track in the queue (clears any loop).
