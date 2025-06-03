@@ -5,7 +5,7 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 ------------
 
 
-### Overview
+## Overview
 
 **Features : **
 *Please note that all commands here have the "!" prefix but this can be changed in __config.py__*
@@ -17,16 +17,16 @@ A full-featured Discord bot for playing music directly from YouTube and Spotify 
 Search and play a YouTube track (This does not fully support link yet)
 If a track is already playing, add it to the queue
 
-###### Syntax : 
+##### Syntax : 
 `!play <title> -loop [int]`
 
 
-######Arguments : 
+#####Arguments : 
 `title` : will search this title on youtube in order to play it
 `-loop [int]` : play the track a total of `[int]` times (initial + `[int]` loops)
 `-loop` : play the track endlessly
 
-###### Examples : 
+##### Examples : 
 
 `!play get lucky daft punk -loop` will play Get Lucky - Daft Punk in loop infintely
 `!play home resonance` will play Resonance - home once or add it to the queue
@@ -38,14 +38,14 @@ If a track is already playing, add it to the queue
 #### !add
 Search for a track and add it to the queue. If nothing is playing, play immediately.
 
-###### Syntax : 
+##### Syntax : 
 
 `!add <title>`
 
-######Arguments : 
+#####Arguments : 
 `title` : will search this title on youtube abd add it to the queue
 
-###### Example : 
+##### Example : 
 `!add Rasputin` : will add Rasputin to the queue
 
 ------------
@@ -53,7 +53,7 @@ Search for a track and add it to the queue. If nothing is playing, play immediat
 #### !queue
 Display queue status: history (played), now playing and upcoming tracks.
 
-###### Syntax : 
+##### Syntax : 
 `!queue`
 
 
@@ -62,27 +62,28 @@ Display queue status: history (played), now playing and upcoming tracks.
 #### !remove 
 Remove a track from the queue by matching title
 
-###### Syntax : 
+##### Syntax : 
 `!remove <title>`
 
-######Arguments : 
+#####Arguments : 
 `title` : will remove this track from the list of upcoming songs
 
-###### Example : 
+##### Example : 
 `!remove Every breath you take` will remove Every Breath you take from the list of upcoming songs
 
 ------------
 
 #### !shuffle
 Shuffle the queue. If a playlist is loading, shuffle after loading finishes.
-###### Syntax : 
+
+##### Syntax : 
 `!shuffle`
 
 ------------
 
 #### !empty
 Clear the entire queue (does not affect history or the current track).
-###### Syntax : 
+##### Syntax : 
 `!empty`
 
 
@@ -90,13 +91,13 @@ Clear the entire queue (does not affect history or the current track).
 
 #### !playlist
 Add all tracks from a YouTube or Spotify playlist to the queue.
-###### Syntax : 
+##### Syntax : 
 `!playlist <URL>`
 
-###### Arguments : 
+##### Arguments : 
 `URL` : will list every songs present in the playlist and add them to the queue
 
-###### Example : 
+##### Example : 
 `!playlist https://open.spotify.com/playlist/06tCWiOWTnuTfoKwHB8Byl?si=0f2e3c97a6bb472f` will add every track present in this spotify playlist to the queue
 
 ------------
